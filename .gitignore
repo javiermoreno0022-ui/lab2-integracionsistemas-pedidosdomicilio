@@ -1,0 +1,24 @@
+Dependencias de Composer
+
+/vendor/
+
+Variables y archivos con información sensible
+
+.env
+.env.*
+!.env.example
+
+Archivos temporales
+
+*.log
+*.tmp
+
+Archivos del sistema operativo
+
+.DS_Store
+Thumbs.db
+
+Configuración de IDE
+
+.idea/
+.vscode/

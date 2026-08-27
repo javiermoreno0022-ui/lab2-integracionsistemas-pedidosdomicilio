@@ -1,0 +1,11 @@
+{
+    "name": "equipo/sistema-pedidos-domicilio",
+    "description": "Sistema de pedidos a domicilio Laboratorio I",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {}
+}
