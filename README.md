@@ -433,29 +433,7 @@ Contraseñas almacenadas mediante hashing.
 Validación de datos de entrada.
 Restricción de acceso a pedidos según el usuario autenticado.
 
-15. Control de versiones
-
-El proyecto utiliza Git para controlar el desarrollo y conservar la evolución del sistema.
-
-La estructura histórica principal corresponde a:
-
-Lab I
-  │
-  ├── Initial commit
-  │
-  ├── Sistema de Pedidos a Domicilio
-  │
-  └── Integrar proyecto con repositorio de GitHub
-           │
-           ▼
-        Lab II
-           │
-           └── Migrar proyecto de Lab I a Laravel
-               e implementar Lab II
-
-El historial permite identificar la transición del proyecto original en PHP nativo hacia la versión desarrollada con Laravel.
-
-16. Estado actual del proyecto
+15. Estado actual del proyecto
 
 El proyecto cuenta con:
 
@@ -476,13 +454,13 @@ Rutas protegidas.
 Mensajes de confirmación.
 Manejo de errores de validación.
 
-17. Nota sobre uso de IA
+16. Nota sobre uso de IA
 
 Durante el desarrollo del proyecto se utilizaron herramientas de Inteligencia Artificial como apoyo para comprender conceptos, revisar código, identificar errores y mejorar la documentación.
 
 El código fue revisado, adaptado y probado por el equipo de acuerdo con los requerimientos del proyecto y las pruebas realizadas localmente.
 
-18. Licencia
+17. Licencia
 
 Proyecto académico desarrollado para la asignatura Integración de Sistemas.
 
