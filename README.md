@@ -14,10 +14,10 @@ El proyecto corresponde a la segunda etapa del desarrollo realizado en el Labora
 
 2. Integrantes del equipo
 Carné	Integrante
-- MN-64016-23	Francisco Javier Moreno Navas
-- PG-64792-23	Alexander Maximiliano Pérez García
-- CL-64224-24	Aaron Steven Cabrera López
-- CD-64257-23	Denys Ezequiel Córdova Domínguez
+- MN-64016-23	Francisco Javier Moreno Navas Participación: 90%
+- PG-64792-23	Alexander Maximiliano Pérez García Participación: 80%
+- CL-64224-24	Aaron Steven Cabrera López Participación: 80%
+- CD-64257-23	Denys Ezequiel Córdova Domínguez Participación: 80%
 
 3. Tecnologías utilizadas
 PHP 8.4.23
