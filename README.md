@@ -19,13 +19,6 @@ PG-64792-23	Alexander Maximiliano Pérez García
 CL-64224-24	Aaron Steven Cabrera López
 CD-64257-23	Denys Ezequiel Córdova Domínguez
 
-Participación del equipo
-Integrante	Participación
-Francisco Javier Moreno Navas	90%
-Alexander Maximiliano Pérez García	80%
-Aaron Steven Cabrera López	80%
-Denys Ezequiel Córdova Domínguez	80%
-
 Los porcentajes representan la participación individual de cada integrante durante el desarrollo del proyecto y fueron acordados por el equipo.
 
 3. Tecnologías utilizadas
@@ -277,7 +270,9 @@ Git.
 También se recomienda utilizar un entorno de desarrollo como Laravel Herd, XAMPP u otro entorno compatible.
 
 Paso 1. Clonar el repositorio
-git clone https://github.com/javiermoreno0022-ui/lab2-integracionsistemas-pedidosdomicilio.git
+
+Ir a la carpeta donde quieran guardar el proyecto y ejecutar:
+git clone -b lab2 https://github.com/javiermoreno0022-ui/lab2-integracionsistemas-pedidosdomicilio.git
 
 Ingresar al proyecto:
 
@@ -324,7 +319,8 @@ php artisan serve
 
 Después ingresar desde el navegador a:
 
-http://localhost:8000
+http://localhost:8000/pedidos
+
 11. Flujo de uso
 
 El flujo principal del sistema es:
