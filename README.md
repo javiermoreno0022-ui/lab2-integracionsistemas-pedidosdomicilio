@@ -19,8 +19,6 @@ Carné	Integrante
 - CL-64224-24	Aaron Steven Cabrera López
 - CD-64257-23	Denys Ezequiel Córdova Domínguez
 
-Los porcentajes representan la participación individual de cada integrante durante el desarrollo del proyecto y fueron acordados por el equipo.
-
 3. Tecnologías utilizadas
 PHP 8.4.23
 Laravel 13.34.0
