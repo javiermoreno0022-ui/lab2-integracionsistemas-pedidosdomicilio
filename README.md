@@ -259,42 +259,54 @@ Route::middleware('auth')->group(function () {
 10. Instalación y configuración
 Requisitos
 
-Antes de ejecutar el proyecto se necesita tener instalado:
+Antes de ejecutar el proyecto, es necesario tener instaladas las siguientes herramientas:
 
-PHP 8.4 o compatible con Laravel 13.
-Composer.
-MySQL.
-Node.js y npm.
-Git.
+PHP 8.4 o una versión compatible con Laravel 13.
+Composer, para administrar las dependencias de PHP.
+MySQL, como sistema gestor de base de datos.
+Node.js y npm, para instalar las dependencias del frontend.
+Git, para clonar el repositorio.
 
 También se recomienda utilizar un entorno de desarrollo como Laravel Herd, XAMPP u otro entorno compatible.
 
 Paso 1. Clonar el repositorio
 
-Ir a la carpeta donde quieran guardar el proyecto y ejecutar:
+Abrir una terminal en la carpeta donde se desea guardar el proyecto y ejecutar:
+
 git clone -b lab2 https://github.com/javiermoreno0022-ui/lab2-integracionsistemas-pedidosdomicilio.git
 
-Ingresar al proyecto:
+Ingresar a la carpeta del proyecto:
 
 cd lab2-integracionsistemas-pedidosdomicilio
 
-El enlace anterior corresponde al repositorio del proyecto. La versión final del Laboratorio II conserva el historial del Laboratorio I.
+El repositorio contiene el desarrollo del Sistema de Pedidos a Domicilio para el Laboratorio II, basado en Laravel y como continuación del trabajo realizado en el Laboratorio I.
 
-Paso 2. Instalar dependencias PHP
+Paso 2. Instalar las dependencias de PHP
+
+Ejecutar:
+
 composer install
-Paso 3. Instalar dependencias frontend
+
+Este comando instala las dependencias definidas en composer.json y composer.lock.
+
+Paso 3. Instalar las dependencias del frontend
+
+Ejecutar:
+
 npm install
 Paso 4. Configurar el archivo .env
 
-Copiar el archivo de ejemplo:
+Crear el archivo de configuración local a partir del ejemplo incluido en el repositorio.
 
-copy .env.example .env
+En Windows PowerShell:
 
-En sistemas Linux/macOS:
+Copy-Item .env.example .env
+
+En Linux o macOS:
 
 cp .env.example .env
 
-Configurar las credenciales de MySQL en .env.
+Abrir el archivo .env y configurar las credenciales de conexión a MySQL.
 
 Ejemplo:
 
@@ -305,21 +317,39 @@ DB_DATABASE=pedidos_domicilio
 DB_USERNAME=root
 DB_PASSWORD=
 
-La base de datos debe existir previamente en MySQL.
+Los valores de usuario y contraseña deben ajustarse al entorno local de cada integrante. La base de datos pedidos_domicilio debe existir previamente en MySQL.
 
 Paso 5. Generar la clave de la aplicación
+
+Ejecutar:
+
 php artisan key:generate
+
+Este comando genera la clave de cifrado que Laravel utiliza para la aplicación local.
+
 Paso 6. Ejecutar las migraciones
+
+Ejecutar:
+
 php artisan migrate
 
-Esto crea las tablas necesarias de Laravel y la tabla pedidos.
+Este comando crea las tablas definidas en las migraciones del proyecto, incluida la tabla pedidos.
 
-Paso 7. Iniciar el servidor
+Paso 7. Iniciar la aplicación
+
+Ejecutar:
+
 php artisan serve
 
-Después ingresar desde el navegador a:
+Abrir en el navegador:
 
-http://localhost:8000/pedidos
+http://127.0.0.1:8000
+
+Para acceder directamente al módulo de pedidos, utilizar:
+
+http://127.0.0.1:8000/pedidos
+
+Nota: si la aplicación utiliza autenticación, será necesario iniciar sesión para acceder a las rutas protegidas.
 
 11. Flujo de uso
 
